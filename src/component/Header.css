@@ -1,0 +1,79 @@
+
+.header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: whitesmoke;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+.header__logo {
+    font-weight: 800;
+    font-size: 2rem;
+    text-decoration: none;
+    color: #000;
+}
+
+.header__nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 30%;
+    justify-content: space-evenly;
+}
+
+.header__div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.header__select {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.nav__link {
+    display: flex;
+    text-decoration: none;
+    align-items: center;
+    color: #000;
+}
+
+.hide {
+    display: none;
+}
+
+@media only screen and (max-width: 786px){
+    .header {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        background-color: whitesmoke;
+        align-items: center;
+        justify-content: space-around;
+        width: 100%;
+        padding: 0px;
+    }
+
+    .header__nav {
+        display: none;
+    }
+
+    .small-menu {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 40%;
+    }
+    .sm-icon {
+        font-size: 1.7rem;
+        
+    }
+}

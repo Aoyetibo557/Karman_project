@@ -1,0 +1,167 @@
+
+.tab__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+}   
+
+.tab__header {
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    border-bottom: 1px solid #fff;
+
+}
+
+.tab__header > button {
+    color: #fff;
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    border: none;
+}
+
+.tab__icon {
+    font-size: 2rem ;
+    padding-right: 10px;
+}
+
+.tab {
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+    opacity: 0.6;
+    box-sizing: content-box;
+}
+
+.active-tab {
+  background-color: #fff;
+  border-bottom: 90px solid #999;
+  opacity: 1;
+}
+
+.tab__contents {
+    display: flex;
+    flex-direction: column;
+    flex-grow : 1;
+    width: 80%;
+}
+
+
+.content {
+  padding: 20px;
+  /* width: 100%; */
+  /* height: 100%; */
+  display: none;
+
+}
+
+.active-content {
+  display: flex;
+  flex-direction: column;
+  padding-top: 40px;
+}
+
+.tab-one__top {
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.banner__div {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    margin-bottom: 20px;
+    height: 160px;
+    width: 160px;
+    
+}
+
+.banner__div-bg {
+    border-radius: 30px;
+    background-color: rgba(255, 255, 255, 0.219);
+}
+
+.banner__div p {
+    font-size: 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: #fff;
+}
+
+.tab-one__img{
+    width: 110px;
+    object-fit: contain;
+    color: #fff !important;
+    filter: contrast();
+}
+
+@media only screen and (max-width: 768px) {
+    .tab__container {
+        width: 100%;
+    }   
+
+    .tab__header {
+        width: 100%;
+    }
+
+    .tab {
+        display: flex;
+        flex-direction: column;
+        padding: 8px;
+        opacity: 0.7;
+    }
+
+
+    .content {
+        padding: 0px;
+    }
+
+    .active-content {
+        display: flex;
+        flex-direction: column;
+        padding-top: 10px;
+    }
+
+    .tab-one__top {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+       
+    } 
+    
+    .banner__div {
+        padding: 5px;
+        margin-bottom: 15px;
+        height: 100px;
+        width: 100px;
+        
+    }
+
+    .banner__div p {
+        font-size: 13px;
+        font-weight: 700;
+        text-align: center;
+    }
+
+    .tab-one__img{
+        width: 60px;
+    }
+
+    
+}

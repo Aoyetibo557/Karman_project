@@ -1,0 +1,59 @@
+
+
+.minicard {
+    width: 500px;
+    height: 300px;
+    object-fit: contain;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+    padding: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.flight-img {
+    width: 500px;
+    height: 300px;
+    object-fit: contain;
+    background: url('../images/flight.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    /* transform: scaleX(-1); */
+}
+
+.vr-img {
+    width: 430px;
+    height: 300px;
+    object-fit: contain;
+    background: url('../images/VR.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+}
+
+.minicard__link{
+    color: #000;
+    background-color: #fff;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 15px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    padding: 10px;
+    width: 150px;
+    text-align: center;
+    cursor: pointer;
+}
+
+@media only screen and (max-width:768px) {
+   .minicard {
+        width: 300px;
+        height: 150px;
+    }
+}

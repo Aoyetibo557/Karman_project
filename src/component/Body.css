@@ -1,0 +1,363 @@
+
+.body {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.body__section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.top__section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 70%;
+    height: 100%;
+    padding: 10px;
+    margin-bottom: 50px;
+
+}
+
+.top__section h5 {
+    font-size: 2.3rem;
+    font-weight: 500;
+    margin-left: 70px;
+    margin-bottom: 30px;
+}
+
+.top__section>div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.mid__section {
+    background-color: #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.mid__section h5 {
+    font-size: 2.3rem;
+    font-weight: 500;
+    margin-bottom: 30px;
+    color: #fff;
+}
+
+.longcard {
+    width: 80%;
+    height: 300px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+}
+
+.longcard-text h4 {
+    color: #fff;
+    font-size: 1.9rem;
+    font-weight: 300;
+    margin-top:30px;
+}
+
+.longcard-text {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-left: 30px;
+    height: 200px;
+
+}
+
+.longcard-text p {
+    color: #fff;
+    font-size: 18px;
+}
+
+.trip-img {
+    background: url('../images/trip.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.martian-img{
+    background: url('../images/martian.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.lights-img {
+    background: url('../images/lights.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.longcard-text-btn {
+    font-size: 16px;
+    font-weight: 400;
+    color: #000;
+    background-color: #fff;
+    width: 190px;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+
+.bottom__section {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    justify-content: space-between;
+}
+
+.bottom__section h5 {
+    font-size: 2.3rem;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+
+.bottom__section-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.bottom__div {
+    width: 300px;
+}
+
+.bottom-img {
+    width: 300px;
+    height: 300px;
+    object-fit: contain;
+}
+
+.bottom-h3 {
+    font-weight: 600;
+    font-size: 1.5rem;
+    color: #29A1D8;
+}
+
+.bottom-link {
+    text-decoration: none;
+}
+
+.bottom-crypto {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.crypto__banner {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 20px;
+    width: 90%;
+    height: 280px;
+    border-radius: 10px;
+    background: rgb(130,99,99);
+    background: linear-gradient(90deg, rgba(130,99,99,1) 0%, rgba(18,18,25,1) 100%, rgba(0,212,255,1) 100%);
+}
+
+.crypto-h5 {
+    font-size: 2.3rem;
+    font-weight: 800;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+
+.crypto__banner h4 {
+    font-size: 1.4rem;
+    font-weight: 400;
+    margin-bottom: 10px;
+    color: #fff;
+
+}
+
+.crypto__banner p {
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.crypto__banner button {
+    padding: 10px;
+    border: none;
+    font-size: 17px;
+    font-weight: 300;
+    border-radius: 10px;
+    width: 200px;
+    cursor: pointer;
+}
+
+.crypto__banner button:hover {
+    transform: scale(1.05);
+    transition: all ease .2s;
+}
+
+
+@media only screen and (max-width: 786px){
+    .top__section {
+        flex-direction: row;
+        align-items: center;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .top__section h5 {
+        font-size: 1.5rem;
+    }
+
+    .mid__section {
+        background-color: #fff;
+    }
+
+    .mid__section h5 {
+        font-size: 1.3rem;
+        color: #000;
+    }
+
+    .longcard {
+        width: 330px;
+        height: 170px;
+        padding: 5px;
+    }
+
+    .longcard-text h4 {
+        color: #fff;
+        font-size: 19px;
+        font-weight: 700;
+        margin-top: 5px;
+    }
+
+    .longcard-text {
+        justify-content: flex-end;
+        margin-left: 5px;
+        height: 100%;
+
+    }
+
+    .longcard-text p {
+        color: #fff;
+        font-size: 14px;
+    }
+
+    .longcard-text-btn {
+        font-size: 14px;
+        width: 120px;
+        padding: 10px;
+    }
+
+        
+    .bottom__section {
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+
+    .bottom__section h5 {
+        text-align: center;
+        font-size: 1.2rem;
+        font-weight: 500;
+        margin-bottom: 50px;
+    }
+
+    .bottom__section-div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .bottom__div {
+        padding: 0;
+        margin: 0;
+        width: 300px;
+        height: 100%;
+    }
+
+    .bottom-img {
+        width: 270px;
+        height: 300px;
+        object-fit: contain;
+    }
+
+    .bottom-h3 {
+        font-weight: 600;
+        font-size: 1.2rem;
+        color: #29A1D8;
+    }
+
+    .bottom__div div p {
+        font-size: 13px;
+    }
+
+    .bottom-crypto {
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .crypto__banner {
+        padding: 20px;
+        width: 85%;
+        height: 180px;
+    }
+
+    .crypto__banner h4 {
+        font-size: 1.2rem;
+        font-weight: 400;
+        margin-bottom: 10px;
+        color: #fff;
+
+    }
+
+    .crypto__banner p {
+        font-size: 13px;
+        margin-bottom: 10px;
+    }
+
+    .crypto__banner button {
+        padding: 10px;
+        border: none;
+        font-size: 14px;
+        font-weight: 300;
+        width: 140px;
+    }
+
+    .reach-out {
+        width: 300px;
+        text-align: center;
+    }
+
+    .reach-out p {
+        font-size: 13px;
+    }
+}

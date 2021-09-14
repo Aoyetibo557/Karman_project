@@ -1,0 +1,54 @@
+
+.banner{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background: url('../images/banner.jpg') #efefef;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    padding: 30px;
+}
+
+.banner__h5 {
+    display: flex;
+    flex-direction: column;
+    font-size: 4.5rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: #fff;
+    margin-left: 250px;
+}
+
+.banner__tab {
+    padding: 0px;
+    width: 95%;
+}
+
+@media only screen and (max-width: 786px){
+   .banner{
+       display: flex;
+       flex-direction: column;
+       justify-content: space-evenly;
+        background-size: cover;
+        width: 100%;
+        padding: 0px;
+        height: 100%;
+        align-items: center;
+    } 
+ 
+    .banner__h5 {
+
+        margin-left: 250px;
+        font-size: 1.5rem;
+        margin-left: 0px;
+        flex-direction: row;
+
+    }
+
+    .banner__h5 span {
+        margin-left: 10px;
+    }
+
+}
